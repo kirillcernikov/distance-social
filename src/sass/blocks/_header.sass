@@ -1,0 +1,82 @@
+.header
+  background-color: $bg-color
+  padding-top: 6px
+  padding-bottom: 6px
+  &-block
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 1200px
+    margin: auto
+  &-search
+    width: 336px  
+    &__input
+      outline: none
+      padding: 5px 30px 5px 12px
+      width: 100%
+      @include text-size
+      background: $white
+      border: 1px solid $border-color
+      border-radius: 4px
+      background-image: url(../images/search-icon.svg)
+      background-repeat: no-repeat
+      background-position: right 12px center
+  &-navigation
+    display: flex
+    align-items: center
+    &__user
+      display: flex
+      align-items: center
+      &-avatar
+        margin-right: 8px
+      &-name
+        color: $white
+        font-weight: 600
+        @include text-size
+    &__panel
+      display: flex
+      align-items: center
+      margin-left: 12px
+      &-link
+        display: flex
+        align-items: center
+        color: $white
+        text-decoration: none
+        font-weight: 600
+        @include text-size
+        margin-left: 12px
+        &:before
+          content: ''
+          width: 1px
+          height: 16px
+          margin-right: 12px
+          background: $divider
+        &:last-child:after
+          content: ''
+          width: 1px
+          height: 16px
+          margin-left: 12px
+          background: $divider
+    &__icon
+      fill: #002766
+      &:hover
+        fill: $white
+    &__icons
+      display: flex
+      align-items: center
+      &-link
+        display: flex
+        align-items: center
+        margin-left: 17px
+        &:last-child:before
+          content: ''
+          width: 1px
+          height: 16px
+          margin-right: 12px
+          background: $divider
+
+            
+
+
+      
+      
