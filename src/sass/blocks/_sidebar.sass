@@ -1,6 +1,7 @@
 .menu-sidebar
-  margin-top: 18px
+  margin-top: 66px
   max-width: 192px
+  flex-grow: 1
   margin-right: 18px
   
   &__user
@@ -11,7 +12,7 @@
   &__user-name
     color: $bold-text
     @include text-size
-    font-weight: 
+    font-weight: normal
 .nav
   &-group
     display: flex
@@ -27,11 +28,18 @@
     border-radius: 4px
     color: $text-color
     @include text-size
+    
   &-link
     &.active
+      
       background-color: $white
       color: $bold-text
       font-weight: 600
+      background-image: url(../images/dots.png)
+      background-repeat: no-repeat
+      background-position: right 10px center
+
+
     &.last
       padding-top: 12px  
       color: #1890FF
@@ -51,7 +59,7 @@
     
     
 .main-feed
-  margin-top: 18px
+  margin-top: 66px
   max-width: 588px 
   flex-grow: 1
   
@@ -63,7 +71,7 @@
   overflow: 
 .post-header
     padding: 9px 16px
-    background: #F5F5F5 
+    background: $secondary-bg
     &__title
       color: $text-color
       @include text-size
@@ -72,11 +80,17 @@
   display: flex
   align-items: flex-start
   &__avatar
-    padding-right: 8px
+    // padding-right: 8px
+    width: 40px
+    height: 40px
+    border-radius: 50%
   &__input
     padding-top: 8px
-    width: 90%
+    padding-left: 8px
+    width: 100%
     outline: none
+    word-wrap: break-word
+    overflow-x: hidden
 .post-footer
   display: flex
   align-items: center
@@ -90,7 +104,7 @@
     margin-bottom: 16px
   &__tag
     margin-right: 8px
-    background: #F5F5F5
+    background: $secondary-bg
     border-radius: 48px
     border: none
     outline: none
@@ -104,3 +118,103 @@
   font-weight: 600
   &:last-child
     padding-right: 8px
+
+.news
+  background: $white
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;      
+  margin: 16px 0
+  padding: 16px
+  &-header
+    display: flex
+    justify-content: space-between
+    margin-bottom: 16px 
+  &-post-time
+    display: flex
+    align-items: center  
+  &-avatar
+    width: 48px
+    height: 48px
+    border-radius: 50% 
+    margin-right: 12px 
+  &-user
+    display: flex
+    align-items: center
+  &-info
+    display: flex
+    flex-wrap: wrap
+    &__author
+      color: $bg-color
+      @include text-size
+      font-weight: 600
+      text-decoration: none
+      width: 100%
+    &__time
+      color: #8C8C8C
+      @include text-size
+      &::after
+        display: inline-block
+        content: ''
+        width: 4px
+        height: 4px
+        background: #BFBFBF
+        border-radius: 50%
+        vertical-align: middle
+        margin-right: 6px
+        margin-left: 6px
+    &__button
+      background: $white
+      border: none
+      outline: none
+  &-text  
+    color: $text-color
+    @include text-size
+    margin-bottom: 16px 
+    & a 
+      color: #096dd9   
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+  &-image
+    border: 1px solid #BFBFBF
+    border-radius: 4px
+    max-width: 100%
+  &-likes
+    display: flex
+    align-items: center
+    margin-top: 9px
+    margin-bottom: 9px
+    & svg:hover
+      width: 20px
+      height: 20px
+    &__counter
+      @include text-size
+      color: $text-color 
+      margin-left: 4px   
+.news
+  &-footer
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    &::before
+      content: ''
+      width: 100%
+      height: 1px
+      background-color: #E8E8E8
+      margin-bottom: 16px
+  &-button 
+    display: flex
+    align-items: center  
+    background: $white
+    border: none
+    outline: none
+    &__text
+      color: $text-color
+      @include text-size
+      font-weight: 600
+      margin-left: 8px
+      
+     
+
+
+  
