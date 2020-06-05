@@ -11,12 +11,17 @@ body {
 
 .container {
   display: flex;
+  justify-content: space-between;
   max-width: 1200px;
   margin: auto;
 }
 
 button, svg {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header {
@@ -431,4 +436,127 @@ button, svg {
   line-height: 22px;
   font-weight: 600;
   margin-left: 8px;
+}
+
+.right-sidebar {
+  width: 384px;
+}
+
+.stories {
+  margin-top: 66px;
+  background: #ffffff;
+  margin-left: 24px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px;
+  padding-left: 24px;
+}
+
+.stories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.stories-header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.stories-header-buttons__link {
+  display: flex;
+  align-items: center;
+  color: #0050B3;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.stories-header-buttons__link:last-child::before {
+  display: inline-block;
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #BFBFBF;
+  margin: 0 8px;
+}
+
+.stories-header-buttons__link svg {
+  margin-right: 4px;
+}
+
+.stories-header__title {
+  margin: 0;
+  color: #262626;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.stories-item-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.stories-item-add {
+  display: flex;
+  align-items: center;
+}
+
+.stories-item__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stories-item-avatar {
+  margin-right: 12px;
+}
+
+.stories-item__author {
+  display: block;
+  color: #0050B3;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.stories-item__text {
+  display: block;
+  color: #8C8C8C;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.stories-items {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.stories-items-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stories-items-avatar {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+}
+
+.stories-items__author {
+  color: #0050B3;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.stories-items__text {
+  color: #8C8C8C;
+  font-size: 14px;
+  line-height: 22px;
 }

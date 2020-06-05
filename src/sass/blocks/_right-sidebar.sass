@@ -1,0 +1,88 @@
+.right-sidebar
+  width: 384px
+  
+.stories
+  margin-top: 66px
+  background: $white
+  margin-left: 24px
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px
+  padding-left: 24px
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 16px
+    &-buttons
+      display: flex
+      align-items: center
+      &__link
+        display: flex
+        align-items: center
+        color: #0050B3
+        @include text-size
+        text-decoration: none
+        &:last-child::before
+          display: inline-block
+          content: ''
+          width: 4px
+          height: 4px
+          border-radius: 50%
+          background: #BFBFBF
+          margin: 0 8px
+        & svg
+          margin-right: 4px
+    &__title
+      margin: 0
+      color: $bold-text
+      font-weight: 600
+      @include text-size
+  &-item
+    &-avatar
+      width: 48px
+      height: 48px
+      border-radius: 50%
+.stories-item
+  &-add
+    display: flex
+    align-items: center
+  &__content
+    display: flex
+    flex-direction: column 
+  &-avatar
+    margin-right: 12px  
+    
+  &__author
+    display: block
+    color: #0050B3
+    @include text-size
+    font-weight: 600
+    margin-bottom: 4px
+  &__text
+    display: block 
+    color: #8C8C8C
+    @include text-size  
+.stories-items
+  display: flex
+  align-items: center
+  margin-top: 16px
+  &-content
+    display: flex
+    flex-direction: column
+  &-avatar
+    width: 48px
+    height: 48px
+    margin-right: 12px
+  &__author
+    color: #0050B3
+    font-weight: bold
+    @include text-size  
+  &__text
+    color: #8C8C8C
+    @include text-size    
+
+
+
+    
+      
